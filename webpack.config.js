@@ -16,7 +16,7 @@ module.exports = {
 		app: ["./assets/js/app.js", "./assets/scss/app.scss"],
 	},
 	output: {
-		filename: "public/script/app.js",
+		filename: "public/style/app.js",
 		path: path.resolve(__dirname),
 	},
 	module: {
@@ -30,7 +30,21 @@ module.exports = {
 							publicPath: "../",
 						},
 					},
-					"css-loader",
+					{
+						loader: "css-loader",
+						// options: {
+						// 	url: (url, resourcePath) => {
+						// 		// Replace '/assets/images' with '/public/images' in the CSS files
+						// 		if (url.startsWith("/assets/images")) {
+						// 			return url.replace(
+						// 				"/assets/images",
+						// 				"/public/images"
+						// 			);
+						// 		}
+						// 		return url;
+						// 	},
+						// },
+					},
 					{
 						loader: "postcss-loader",
 						options: {
@@ -47,7 +61,7 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "public/style/app.css",
+			filename: "public/script/app.css",
 		}),
 		new CopyWebpackPlugin({
 			patterns: [
@@ -61,11 +75,6 @@ module.exports = {
 				},
 			],
 		}),
-		new ESLintPlugin({
-			files: "assets/js/**/*.js",
-			extensions: [".js"],
-		}),
-
 		mode === "development"
 			? new BrowserSyncPlugin({
 					host: "localhost",
@@ -73,7 +82,7 @@ module.exports = {
 					server: { baseDir: ["public"] },
 			  })
 			: false,
-	],
+	].filter(Boolean),
 	optimization: {
 		minimize: mode === "production",
 		minimizer: [

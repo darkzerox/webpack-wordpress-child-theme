@@ -10,6 +10,7 @@
 		"no-tabs": "off",
 		"operator-linebreak": "off",
 		"indent": "off",
-		"no-mixed-spaces-and-tabs": "off"
+		"no-mixed-spaces-and-tabs": "off",
+		"comma-dangle": "off"
 	}
 }
