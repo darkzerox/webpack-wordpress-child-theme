@@ -1,0 +1,36 @@
+@import "commons/fonts";
+
+@import "commons/mixins";
+@import "commons/variables";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/utilities";
+
+@import "commons/base";
+
+@import "components/animations";
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/forms";
+@import "components/wordpress-utilities";
+@import "components/utilities";
+
+@import "partials/header";
+@import "partials/home";
+@import "partials/archive";
+@import "partials/page";
+@import "partials/single";
+@import "partials/footer";
+@import "partials/not-found";

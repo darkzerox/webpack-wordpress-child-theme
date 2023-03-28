@@ -1,0 +1,39 @@
+// Font Size
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+.font-size-md {
+  font-size: $font-size-md;
+}
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+
+// Color
+.text-inherit {
+  color: inherit;
+}
+
+// List Reset
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+// Flex
+.flex-grow {
+  flex: 1;
+}
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+// Burger Icon
+.burger-icon {
+  @include burger(25px, 2px, 5px, #444);
+}

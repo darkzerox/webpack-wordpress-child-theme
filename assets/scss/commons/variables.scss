@@ -1,0 +1,41 @@
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$headings-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-weight: normal;
+
+$body-color: #222222;
+$primary: #000;
+$secondary: #006838;
+$headings-color: $body-color;
+$headings-margin-bottom: 0;
+$text-muted: #999;
+$link-color: inherit;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+$paragraph-margin-bottom: 0;
+$headings-line-height: 1.2;
+$border-radius: 2px;
+$border-color: #eee;
+
+$font-size-xs: rem(12px);
+$font-size-md: rem(18px);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  15: ($spacer * .4),
+  2: ($spacer * .5),
+  25: ($spacer * .75),
+  3: $spacer,
+  35: ($spacer * 1.25),
+  4: ($spacer * 1.5),
+  45: ($spacer * 2),
+  5: ($spacer * 3),
+  55: ($spacer * 3.5),
+  6: ($spacer * 4),
+  65: ($spacer * 4.5),
+  7: ($spacer * 5),
+);
+
+$btn-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
