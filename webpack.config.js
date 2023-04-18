@@ -16,7 +16,7 @@ module.exports = {
 		app: ["./assets/js/app.js", "./assets/scss/app.scss"],
 	},
 	output: {
-		filename: "public/style/app.js",
+		filename: "public/script/app.js",
 		path: path.resolve(__dirname),
 	},
 	module: {
@@ -32,18 +32,6 @@ module.exports = {
 					},
 					{
 						loader: "css-loader",
-						// options: {
-						// 	url: (url, resourcePath) => {
-						// 		// Replace '/assets/images' with '/public/images' in the CSS files
-						// 		if (url.startsWith("/assets/images")) {
-						// 			return url.replace(
-						// 				"/assets/images",
-						// 				"/public/images"
-						// 			);
-						// 		}
-						// 		return url;
-						// 	},
-						// },
 					},
 					{
 						loader: "postcss-loader",
@@ -61,7 +49,7 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "public/script/app.css",
+			filename: "public/style/app.css",
 		}),
 		new CopyWebpackPlugin({
 			patterns: [
